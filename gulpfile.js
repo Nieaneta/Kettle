@@ -1,7 +1,7 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass");
 var sourcemaps = require("gulp-sourcemaps");
-// var autoprefixer = require("gulp-autoprefixer");
+var autoprefixer = require("gulp-autoprefixer");
 var browserSync = require("browser-sync").create();
 
 gulp.task("watch", function(cb) {
@@ -21,20 +21,18 @@ gulp.task("serve", function(cb) {
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task("sass", function() {
-    return (
-        gulp
-            .src("develop/scss/**/*.scss")
-            .pipe(sass().on("error", sass.logError))
-            .pipe(sourcemaps.init())
-            // .pipe(
-            //     autoprefixer({
-            //         browsers: ["last 4 versions"]
-            //     })
-            // )
-            .pipe(sourcemaps.write())
-            .pipe(gulp.dest("develop/css"))
-            .pipe(browserSync.stream())
-    );
+    return gulp
+        .src("develop/scss/**/*.scss")
+        .pipe(sass().on("error", sass.logError))
+        .pipe(sourcemaps.init())
+        .pipe(
+            autoprefixer({
+                browsers: ["last 2 versions"]
+            })
+        )
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest("develop/css"))
+        .pipe(browserSync.stream());
 });
 
 gulp.task("default", gulp.series("serve"));

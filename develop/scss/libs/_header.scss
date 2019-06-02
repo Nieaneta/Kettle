@@ -1,0 +1,149 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    // max-width: 1366px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+.col {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.page-header {
+    height: 100%;
+    position: relative;
+    z-index: 1000;
+}
+
+.page-header .container {
+    align-items: center;
+    height: 100%;
+}
+
+.page-logo {
+    display: block;
+    margin: 20px auto;
+    height: 100px;
+}
+
+.page-nav {
+    background-color: #fff;
+    margin: 15px auto;
+    width: 1200px;
+}
+
+.page-nav-list {
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.page-nav-list-el {
+    height: 100%;
+    margin: 0 auto;
+}
+.page-nav-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.page-nav-list-link:hover{
+    color: $color-hardcore;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 60px;
+    padding: 0;
+    margin: 0 auto;
+    // transition: 0.3s linear;
+}
+
+.slider {
+    position: relative;
+    height: 100%;
+}
+.slider-img {
+    display: block;
+    width: 100%;
+}
+.slider-slide-title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 6rem;
+    font-weight: 900;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.slider-slide-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.slider-slide-text::before{
+    display: block;
+    content: "";
+    width: 250px;
+    height: 2px;
+    background-color: #000;
+    margin: 20px auto;
+}
+
+.demo1-scroll {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    height: 4em;
+    width: 2em;
+    border: 0.2em solid rgba(#000, 1);
+    border-radius: 2em;
+}
+
+.demo1-scroll:before {
+    content: "";
+    width: 0.4em;
+    height: 1.2em;
+    border-radius: 0.7em;
+    background: #000;
+    display: block;
+    margin: 0.3em auto;
+    animation: demo1-scroll-anim 0.8s 0s infinite alternate ease-in-out;
+}
+
+@keyframes demo1-scroll-anim {
+    50% {
+        height: 1.7em;
+    }
+    100% {
+        margin-top: 2.4em;
+    }
+}
+

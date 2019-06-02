@@ -1,8 +1,11 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-div {
-    font-size: 20px;
-    color: red;
-}
+@import "./libs/reset";
+@import "./libs/variables";
+@import "./libs/fullpage";
+@import './libs/header';
+@import './libs/history';
+@import './libs/why';
+@import './libs/forWho';
+@import './libs/amrap';
+@import './libs/exercise';
+@import './libs/arr';
+@import './libs/footer';
