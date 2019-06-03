@@ -1,18 +1,70 @@
 .col {
     padding: 0;
 }
+.wod{
+    position: relative;
+}
+.wod-img{
+    margin-top: 60px;
+}
+.wod-text,.wod-text-ex{
+position: absolute;
+transform: translate(-50%, -50%);
+color: $color-advanced;
+
+}
+.wod-text{
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+}
+.wod-text-ex{
+    top: 60%;
+    left: 74%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 60%;
+}
+
 .wod-article {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 550px;
     margin: 0 auto;
 }
 
+.wod-triangle{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 0; 
+    height: 0; 
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    
+    border-top: 30px solid #fff;
+}
+
+.wod-triangle-bottom{
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%);
+    width: 0; 
+    height: 0; 
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 30px solid $color-advanced;
+}
 .wod-article-title {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 45px;
     color: #fff;
     font-weight: 600;
     font-size: 1.5rem;
@@ -20,19 +72,22 @@
 
 .wod-article-number {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgba(255, 255, 255, 0.5);
-    font-size: 10rem;
+    font-size: 20rem;
     font-weight: 700;
+    z-index: 1;
 }
 
 .wod-article-text {
     text-align: center;
-    padding: 50px 20px 20px 20px;
+    padding: 150px 20px 20px 20px;
     font-size: 0.9rem;
     z-index: 2;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .wod-article-btn {
@@ -41,10 +96,34 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-style: none;
-    padding: 10px 20px;
-    border-radius: 10px;
+    padding: 10px 40px;
+    border-radius: 20px;
     text-transform: uppercase;
     background-color: #fff;
+}
+
+.wod-article-btn::before{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 15px;
+    height: 1px;
+    background-color: #000;
+}
+
+.wod-article-btn::after{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 15px;
+    height: 1px;
+    background-color: #000;
 }
 
 .wod-article.beginner {
