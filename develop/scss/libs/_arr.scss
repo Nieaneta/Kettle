@@ -1,5 +1,16 @@
 .arr{
+    position: relative;
     margin: 0;
     padding: 0;
     height: 100%;
+}
+
+.arr-title, .arr-list{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    color: #fff;
+}
+.arr-list{
+   top: 35%;
 }

@@ -1,5 +1,24 @@
+.amrap {
+    position: relative;
+}
 .amrap-img {
     transform: skewY(5deg);
     margin-top: 5px;
 }
 
+.amrap-title,
+.amrap-txt,
+.amrap-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.amrap-txt {
+    top: 35%;
+}
+.amrap-text {
+    top: 50%;
+}

@@ -13,8 +13,19 @@
     // background-repeat: no-repeat;
 }
 
-.forWho-title {
+.forWho-title,
+.forWho-txt,
+.forWho-text {
     position: absolute;
-    top: 50%;
-    left: 20%;
+    top: 30%;
+    right: 50%;
+}
+
+.forWho-txt {
+    top: 35%;
+}
+
+.forWho-text {
+    top: 40%;
+    width: 40%;
 }

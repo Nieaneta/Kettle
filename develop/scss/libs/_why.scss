@@ -1,5 +1,24 @@
+.why{
+    position: relative;
+}
+
 .why-img {
     transform: skewY(5deg);
     margin-top: 5px;
 }
 
+.why-title, .why-txt, .why-text{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+   
+}
+
+.why-txt{
+    top: 35%;
+}
+
+.why-text{
+    top:40%;
+    width: 70%;
+}
