@@ -1,25 +1,25 @@
 .col {
     padding: 0;
 }
-.wod{
+.wod {
     position: relative;
 }
-.wod-img{
+.wod-img {
     margin-top: 60px;
 }
-.wod-text,.wod-text-ex{
-position: absolute;
-transform: translate(-50%, -50%);
-color: $color-advanced;
-
+.wod-text,
+.wod-text-ex {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: $color-advanced;
 }
-.wod-text{
+.wod-text {
     top: 50%;
     left: 55%;
     transform: translate(-50%, -50%);
     font-size: 2.5rem;
 }
-.wod-text-ex{
+.wod-text-ex {
     top: 60%;
     left: 74%;
     transform: translate(-50%, -50%);
@@ -36,26 +36,28 @@ color: $color-advanced;
     margin: 0 auto;
 }
 
-.wod-triangle{
+.wod-article:hover {
+}
+
+.wod-triangle {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;
-    
-    border-top: 30px solid #fff;
+    border-top: 30px solid#fff;
 }
 
-.wod-triangle-bottom{
+.wod-triangle-bottom {
     position: absolute;
-    bottom: -5%;
+    bottom: -4%;
     left: 50%;
     z-index: 10;
     transform: translate(-50%);
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;
     border-top: 30px solid $color-advanced;
@@ -88,6 +90,7 @@ color: $color-advanced;
     z-index: 2;
     width: 75%;
     margin: 0 auto;
+    line-height: 1.3rem;
 }
 
 .wod-article-btn {
@@ -100,9 +103,11 @@ color: $color-advanced;
     border-radius: 20px;
     text-transform: uppercase;
     background-color: #fff;
+    line-height: 1.5rem;
+    font-weight: 500;
 }
 
-.wod-article-btn::before{
+.wod-article-btn::before {
     display: block;
     position: absolute;
     top: 50%;
@@ -114,7 +119,7 @@ color: $color-advanced;
     background-color: #000;
 }
 
-.wod-article-btn::after{
+.wod-article-btn::after {
     display: block;
     position: absolute;
     top: 50%;
