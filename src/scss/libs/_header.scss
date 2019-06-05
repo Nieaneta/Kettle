@@ -38,7 +38,6 @@ body {
     animation-iteration-count: infinite;
 }
 
-
 // @keyframes biggest {
 //     0% {
 //       border-radius: 20px;
@@ -127,10 +126,10 @@ body {
 
 .slider {
     position: relative;
-    background-image: url('/develop/images/k2.jpg');
+    background-image: url("../images/k2.jpg");
     background-size: cover;
     min-height: 100vh;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
 
 .slider-slide-title {

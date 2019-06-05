@@ -4,14 +4,13 @@
 .wod {
     position: relative;
     margin-top: 80px;
-    
 }
 .wod-img {
     position: relative;
-    background-image: url('/develop/images/kettelblack_1920.jpg');
+    background-image: url("../images/kettelblack_1920.jpg");
     background-size: cover;
     min-height: 100vh;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-position: left center;
 }
 .wod-text,
