@@ -9,7 +9,8 @@
     position: relative;
     background-image: url("../images/kettelblack_1920.jpg");
     background-size: cover;
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 500px;
     background-repeat: no-repeat;
     background-position: left center;
 }
@@ -41,9 +42,6 @@
     width: 100%;
     height: 550px;
     margin: 0 auto;
-}
-
-.wod-article:hover {
 }
 
 .wod-triangle {

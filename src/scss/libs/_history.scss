@@ -2,9 +2,11 @@
     position: relative;
     background-image: url("../images/history.jpg");
     background-size: cover;
-    min-height: 120vh;
+    min-height: 800px;
+    height: 100vh;
     background-repeat: no-repeat;
     background-position: center center;
+    margin-top: 20px;
 }
 
 .history-title {

@@ -1,19 +1,20 @@
-.arr{
+.arr {
     position: relative;
-    background-image: url('../images/handy_b1920.jpg');
+    background-image: url("../images/handy_b1920.jpg");
     background-size: cover;
     min-height: 120vh;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-position: left center;
 }
 
-.arr-title, .arr-list{
+.arr-title,
+.arr-list {
     position: absolute;
     top: 30%;
     left: 50%;
     color: #fff;
 }
-.arr-title{
+.arr-title {
     top: 15%;
     left: 50%;
     transform: translate(-50%);
@@ -23,10 +24,23 @@
     text-transform: uppercase;
     font-weight: 700;
     font-size: 3rem;
+    animation: fontAnim 2s linear forwards;
 }
-.arr-list{
-   top: 30%;
-   left: 15%;
-   line-height: 2rem;
-   font-size: 1.2rem;
+
+@keyframes fontAnim {
+    0% {
+        font-size: 2rem;
+    }
+    50% {
+        font-size: 2.5rem;
+    }
+    100% {
+        font-size: 3rem;
+    }
+}
+.arr-list {
+    top: 30%;
+    left: 15%;
+    line-height: 2rem;
+    font-size: 1.2rem;
 }

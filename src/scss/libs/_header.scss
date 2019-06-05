@@ -31,23 +31,7 @@ body {
     margin: 20px auto;
     height: 100px;
 }
-.page-logo:hover {
-    // animation: biggest .6s linear infinite alternate;
-    animation-duration: 3s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-}
 
-// @keyframes biggest {
-//     0% {
-//       border-radius: 20px;
-//       transform: scale(0.8);
-//     }
-//     100% {
-//       border-radius: 0;
-//       transform: scale(1.2);
-//     }
-//   }
 .page-nav {
     background-color: #fff;
     margin: 15px auto;
@@ -72,27 +56,16 @@ body {
     margin: 0 auto;
 }
 .page-nav-list-el {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // height: 100%;
     font-size: 1rem;
     font-weight: 500;
     padding: 10px 10px;
     display: inline-block;
     position: relative;
-    // padding: 8px 20px;
-    // letter-spacing: 1px;
     text-align: center;
     text-decoration: none;
-    // text-transform: uppercase;
     cursor: pointer;
     z-index: 1;
 }
-
-// .page-nav-list-link:hover{
-//     color: $color-hardcore;
-// }
 
 .page-nav-list-el::before {
     content: "";
@@ -106,6 +79,7 @@ body {
     border-radius: 5px;
     transform: scaleX(0.2);
     transition: 0.2s linear;
+    top: 32px;
 }
 
 .page-nav-list-el:hover::before {
@@ -121,14 +95,18 @@ body {
     height: 60px;
     padding: 0;
     margin: 0 auto;
-    // transition: 0.3s linear;
+    -webkit-transition: height 0.5s ease;
+    -moz-transition: height 0.5s ease;
+    -o-transition: height 0.5s ease;
+    transition: height 0.5s ease;
 }
 
 .slider {
     position: relative;
     background-image: url("../images/k2.jpg");
     background-size: cover;
-    min-height: 100vh;
+    min-height: 800px;
+    height: 100vh;
     background-repeat: no-repeat;
 }
 
@@ -162,7 +140,7 @@ body {
     left: -40%;
     transform: translate(-50%, -50%);
     width: 150px;
-    height: 1px;
+    height: 2px;
     background-color: #000;
 }
 
@@ -174,7 +152,7 @@ body {
     right: -100%;
     transform: translate(-50%, -50%);
     width: 150px;
-    height: 1px;
+    height: 2px;
     background-color: #000;
 }
 .demo1-scroll {
