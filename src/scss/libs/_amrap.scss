@@ -1,9 +1,14 @@
 .amrap {
     position: relative;
+    margin-top: 20px;
 }
 .amrap-img {
+    position: relative;
+    background-image: url('/develop/images/stojaki_g1920.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat; 
     transform: skewY(5deg);
-    margin-top: 5px;
 }
 
 .amrap-title,
@@ -15,7 +20,7 @@
     transform: translate(-50%, -50%);
     color: #fff;
 }
-.amrap-title{
+.amrap-title {
     font-weight: 800;
     font-size: 2.5rem;
 }
@@ -30,14 +35,14 @@
     background-color: #fff;
 }
 .amrap-txt {
-    top: 39%;
+    top: 40%;
     left: 73%;
     font-size: 1.5rem;
 }
 .amrap-text {
     text-align: right;
-    top: 55%;
-    left: 55%;
+    top: 60%;
+    left: 54%;
     width: 60%;
     line-height: 1.5rem;
 }

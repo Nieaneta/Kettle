@@ -1,8 +1,10 @@
 .arr{
     position: relative;
-    padding: 0;
-    margin: -5px;
-    height: 100%;
+    background-image: url('/develop/images/handy_b1920.jpg');
+    background-size: cover;
+    min-height: 120vh;
+    background-repeat: no-repeat; 
+    background-position: left center;
 }
 
 .arr-title, .arr-list{

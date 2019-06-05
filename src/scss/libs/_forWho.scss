@@ -1,23 +1,19 @@
 .twoKettles {
     position: relative;
-    height: 100%;
+    background-image: url('/develop/images/kettelgreen_1920.jpg');
+    background-size: cover;
+    min-height: 120vh;
+    background-repeat: no-repeat; 
+    margin-top: 80px;
+    background-position: left;
 }
 
-.forWho-img {
-    margin-top: 100px;
-    // margin-top: 100px;
-    // min-height: 100vh;
-    // width: 100%;
-    // background-image: url('../images/kettelgreen_1920.jpg');
-    // background-size: cover;
-    // background-repeat: no-repeat;
-}
 
 .forWho-title,
 .forWho-txt,
 .forWho-text {
     position: absolute;
-    top: 30%;
+    top: 20%;
     right: 50%;
 }
 .forWho-title{
@@ -35,7 +31,7 @@
     background-color: $color-beginner;
 }
 .forWho-txt {
-    top: 36%;
+    top: 28%;
     font-size: 1.5rem;
     font-weight: 500;
     color: $color-beginner;
@@ -43,7 +39,7 @@
 
 .forWho-text {
     text-align: right;
-    top: 42%;
+    top:35%;
     right: 48%;
     width: 40%;
     line-height: 1.5rem;

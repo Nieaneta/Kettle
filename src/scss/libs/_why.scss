@@ -1,16 +1,22 @@
 .why{
     position: relative;
+    margin-top: 10px;
 }
 
-.why-img {
+.why-img{
+    position: relative;
+    background-image: url('/develop/images/pump_b1920.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat; 
     transform: skewY(5deg);
-    margin-top: 5px;
 }
 
 .why-title, .why-txt, .why-text{
     position: absolute;
     top: 35%;
     left: 20%;
+    
    
 }
 .why-title{
@@ -29,12 +35,12 @@
     background-color: $color-hardcore;
 }
 .why-txt{
-    top: 40%;
+    top: 42%;
     font-size: 1.5rem;
 }
 
 .why-text{
-    top:45%;
+    top:50%;
     left: 18%;
     font-size: 0.9rem;
     font-weight: 700;

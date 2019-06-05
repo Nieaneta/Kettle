@@ -30,27 +30,31 @@ body {
     display: block;
     margin: 20px auto;
     height: 100px;
-   
 }
 .page-logo:hover {
-    animation: biggest .6s linear infinite alternate;
+    // animation: biggest .6s linear infinite alternate;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
 }
- 
 
-@keyframes biggest {
-    0% {
-      border-radius: 20px;
-      transform: scale(0.8);
-    }
-    100% {
-      border-radius: 0;
-      transform: scale(1.2);
-    }
-  }
+
+// @keyframes biggest {
+//     0% {
+//       border-radius: 20px;
+//       transform: scale(0.8);
+//     }
+//     100% {
+//       border-radius: 0;
+//       transform: scale(1.2);
+//     }
+//   }
 .page-nav {
     background-color: #fff;
     margin: 15px auto;
     width: 1200px;
+    position: sticky;
+    top: 0;
 }
 
 .page-nav-list {
@@ -123,17 +127,17 @@ body {
 
 .slider {
     position: relative;
-    height: 100%;
+    background-image: url('/develop/images/k2.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat; 
 }
-.slider-img {
-    display: block;
-    width: 100%;
-}
+
 .slider-slide-title {
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     font-size: 6rem;
     font-weight: 900;
     text-align: center;

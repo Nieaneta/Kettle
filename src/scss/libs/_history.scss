@@ -1,5 +1,10 @@
 .history-kettles {
     position: relative;
+    background-image: url('/develop/images/history.jpg');
+    background-size: cover;
+    min-height: 120vh;
+    background-repeat: no-repeat; 
+    background-position: center center;
 }
 
 .history-title {
