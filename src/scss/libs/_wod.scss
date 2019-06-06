@@ -44,7 +44,9 @@
     margin: 0 auto;
 }
 
-.wod-triangle {
+.wod-triangle-beg,
+.wod-triangle-adv,
+.wod-triangle-hard {
     position: absolute;
     left: 50%;
     transform: translate(-50%);

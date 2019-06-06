@@ -36,7 +36,7 @@ body {
     background-color: #fff;
     margin: 15px auto;
     width: 1200px;
-    position: sticky;
+    // position: sticky;
     top: 0;
 }
 
@@ -185,4 +185,9 @@ body {
     100% {
         margin-top: 2.4em;
     }
+}
+
+
+@media(max-width: 640px){
+    
 }
