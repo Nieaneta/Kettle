@@ -1,0 +1,111 @@
+.twoKettles {
+    position: relative;
+    background-image: url("../images/kettelgreen_1920.jpg");
+    background-size: cover;
+    min-height: 700px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+    background-position: left;
+}
+
+.forWho-title,
+.forWho-txt,
+.forWho-text {
+    position: absolute;
+    top: 20%;
+    right: 50%;
+}
+.forWho-title {
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+.forWho-title::before {
+    display: block;
+    content: "";
+    position: absolute;
+    right: -6%;
+    top: 20%;
+    width: 6px;
+    height: 65px;
+    background-color: $color-beginner;
+}
+.forWho-txt {
+    top: 27%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $color-beginner;
+}
+
+.forWho-text {
+    text-align: right;
+    top: 35%;
+    right: 48%;
+    width: 40%;
+    line-height: 1.5rem;
+}
+
+@media (max-width: 640px) {
+    .twoKettles {
+        min-height: 200px;
+        height: 20vh;
+        width: 400px;
+        background-image: none;
+        margin: 0 auto;
+    }
+    .forWho-title {
+        top: 5%;
+        left: 10%;
+        font-weight: 600;
+        font-size: 1.2rem;
+        width: 400px;
+    }
+    .forWho-title::before {
+        display: none;
+    }
+    .forWho-txt {
+        top: 15%;
+        left: 10%;
+        font-size: 0.8rem;
+    }
+    .forWho-text {
+        text-align: left;
+        font-size: 0.6rem;
+        top: 25%;
+        left: 10%;
+        width: 70%;
+        line-height: 0.7rem;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .twoKettles {
+        min-height: 400px;
+        height: 40vh;
+        width: 800px;
+        margin: 0 auto;
+    }
+    .forWho-title {
+        top: 5%;
+        left: 10%;
+        font-weight: 600;
+        font-size: 1.5rem;
+        width: 400px;
+    }
+    .forWho-title::before {
+        display: none;
+    }
+    .forWho-txt {
+        top: 15%;
+        left: 10%;
+        font-size: 1rem;
+    }
+    .forWho-text {
+        text-align: left;
+        font-size: 0.8rem;
+        top: 25%;
+        left: 10%;
+        width: 50%;
+        line-height: 0.9rem;
+    }
+}

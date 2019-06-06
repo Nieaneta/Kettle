@@ -38,10 +38,7 @@ const exercisesHard = [
 ];
 
 btnBeg.addEventListener("click", function() {
-    // console.log("klik");
-
     const index = Math.floor(Math.random() * exercisesBeg.length);
-    // console.log(index);
 
     articleH3Beg.innerText = exerciseNames[index];
     const ul = document.createElement("ul");
@@ -64,7 +61,6 @@ btnBeg.addEventListener("click", function() {
 
 btnAdv.addEventListener("click", function() {
     const index = Math.floor(Math.random() * exercisesAdv.length);
-    // console.log(index);
 
     articleH3Adv.innerText = exerciseNames[index];
     const ul = document.createElement("ul");
@@ -87,7 +83,6 @@ btnAdv.addEventListener("click", function() {
 
 btnHard.addEventListener("click", function() {
     const index = Math.floor(Math.random() * exercisesHard.length);
-    // console.log(index);
 
     articleH3Hard.innerText = exerciseNames[index];
     const ul = document.createElement("ul");

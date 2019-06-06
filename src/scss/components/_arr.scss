@@ -1,0 +1,76 @@
+.arr {
+    position: relative;
+    background-image: url("../images/handy_b1920.jpg");
+    background-size: cover;
+    min-height: 120vh;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.arr-title,
+.arr-list {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    color: #fff;
+}
+.arr-title {
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    letter-spacing: 3px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3rem;
+    animation: fontAnim 2s linear forwards;
+}
+
+.arr-list {
+    top: 30%;
+    left: 15%;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 640px) {
+    .arr {
+        margin: 0 auto;
+        min-height: 40vh;
+        height: 400px;
+        width: 400px;
+        background-position: left center;
+    }
+    .arr-title {
+        top: 10%;
+        font-size: 1rem;
+        text-align: center;
+        width: 250px;
+    }
+    .arr-list {
+        top: 23%;
+        font-size: 0.7rem;
+        line-height: 1.2rem;
+    }
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+    .arr {
+        margin: 0 auto;
+        min-height: 50vh;
+        height: 500px;
+        width: 800px;
+        background-position: left center;
+    }
+    .arr-title {
+        top: 10%;
+        font-size: 1.2rem;
+        text-align: center;
+        width: 250px;
+    }
+    .arr-list {
+        top: 30%;
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
+}

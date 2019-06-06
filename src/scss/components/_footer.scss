@@ -1,0 +1,26 @@
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: $color-advanced;
+    height: 4rem;
+    padding-right: 20px;
+}
+
+@media (max-width: 640px) {
+    .copyright {
+        margin: 0 auto;
+        height: 2rem;
+        font-size: 0.6rem;
+    }
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+    .copyright {
+        width: 800px;
+        margin: 0 auto;
+        height: 3rem;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
