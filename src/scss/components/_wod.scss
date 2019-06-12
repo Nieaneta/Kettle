@@ -44,6 +44,10 @@
     margin: 0 auto;
 }
 
+.wod-article.active .wod-triangle {
+    display: block;
+ }
+
 .wod-triangle {
     display: none;
     position: absolute;
